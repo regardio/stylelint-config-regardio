@@ -1,0 +1,48 @@
+{
+  "name": "stylelint-config-regardio",
+  "version": "1.0.0",
+  "description": "Regardio config for stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "suitcss",
+    "regardio"
+  ],
+  "author": "Regardio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/regardio/stylelint-config-regardio.git"
+  },
+  "homepage": "https://github.com/regardio/stylelint-config-regardio",
+  "bugs": "https://github.com/regardio/stylelint-config-regardio/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.10.1",
+    "eslint-config-stylelint": "^5.0.0",
+    "npmpub": "^3.1.0",
+    "stylelint": "^7.5.0",
+    "stylelint-config-suitcss": "^8.0.0",
+    "stylelint-scss": "^1.3.4",
+    "stylelint-selector-bem-pattern": "^1.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.5.0"
+  },
+  "scripts": {
+    "ava": "ava --verbose \"__tests__/**/*.js\"",
+    "lint": "eslint . --ignore-path .gitignore",
+    "pretest": "npm run lint",
+    "release": "npmpub",
+    "test": "npm run ava"
+  },
+  "eslintConfig": {
+    "extends": [
+      "stylelint"
+    ]
+  }
+}
