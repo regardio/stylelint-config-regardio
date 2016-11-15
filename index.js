@@ -8,7 +8,7 @@ module.exports = {
     "at-rule-empty-line-before": null,
     "block-closing-brace-newline-after": [
       "always",
-      { "ignoreAtRules": ["if", "else"] }
+      { "ignoreAtRules": [ "if", "else" ] },
     ],
     "declaration-block-properties-order": [
       "position",
@@ -220,22 +220,22 @@ module.exports = {
       "page",
       "set-link-source",
       "unicode-bidi",
-      "speak"
+      "speak",
     ],
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "plugin/selector-bem-pattern": {
-      "preset": "suit"
+      "preset": "suit",
     },
     "rule-nested-empty-line-before": [
       "always-multi-line",
       { except: ["first-nested"] },
-      { ignore: ["after-comment"] }
+      { ignore: ["after-comment"] },
     ],
     "rule-non-nested-empty-line-before": [
       "always-multi-line",
       { except: ["after-single-line-comment"] },
-      { ignore: ["after-comment"] }
+      { ignore: ["after-comment"] },
     ],
-    "selector-no-type": null
-  }
+    "selector-no-type": null,
+  },
 }
