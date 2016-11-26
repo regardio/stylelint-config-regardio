@@ -1,3 +1,7 @@
+# 1.0.3
+
+* Update dependencies
+
 # 1.0.2
 
 * Change js codestyle to standard.js and configure eslint accordingly
